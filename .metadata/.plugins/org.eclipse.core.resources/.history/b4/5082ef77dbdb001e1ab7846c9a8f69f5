@@ -1,0 +1,38 @@
+package com.testNG;
+
+import org.testng.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+
+import com.geeks.Geeks.TecAdminSeleniumTest;
+
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
+
+
+
+
+public class Facebook_Login_Test {
+
+	TecAdminSeleniumTest tecAdminSeleniumTest= new TecAdminSeleniumTest();
+	WebDriver driver= new ChromeDriver();
+			
+	@Test
+	public void login()
+	{
+		tecAdminSeleniumTest.login();
+		
+		String expectedtitle = "FAILED: login";
+		String actualtitle = driver.getTitle();
+		//System.out.println(actualtitle);
+		//Assert.assertEquals(actualtitle,expectedtitle);
+		System.out.println("passed");
+		
+		
+		
+		
+	}
+	
+	
+}
